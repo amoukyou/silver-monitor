@@ -2,7 +2,7 @@ name: Update Dashboard
 
 on:
   schedule:
-    - cron: '5 * * * *'   # 每小时第5分钟运行
+    - cron: '5 */4 * * *'  # 每4小时运行一次
   workflow_dispatch:        # 允许手动触发
 
 jobs:

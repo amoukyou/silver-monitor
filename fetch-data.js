@@ -466,7 +466,7 @@ header .sub { font-size: 11px; color: #aaa; margin-top: 2px; }
   </div>
   <div class="header-right">
     <div class="updated" id="updatedAt"></div>
-    <div class="countdown">下次刷新: <span id="countdown">60:00</span></div>
+    <div class="countdown">下次刷新: <span id="countdown">4:00:00</span></div>
     <button class="refresh-btn" onclick="location.reload()">立即刷新</button>
   </div>
 </header>
@@ -599,14 +599,14 @@ document.getElementById('hisDate').value = new Date().toISOString().split('T')[0
 
 // ── 倒计时 ────────────────────────────────────────────────
 (function(){
-  const at = Date.now() + 3600000;
+  const at = Date.now() + 14400000;
   function tick(){
     const r = Math.max(0, at - Date.now());
     if (!r) { location.reload(); return; }
     document.getElementById('countdown').textContent =
-      String(Math.floor(r/60000)).padStart(2,'0')+':'+String(Math.floor((r%60000)/1000)).padStart(2,'0');
+      String(Math.floor(r/3600000)).padStart(1,'0')+':'+String(Math.floor((r%3600000)/60000)).padStart(2,'0')+':'+String(Math.floor((r%60000)/1000)).padStart(2,'0');
   }
-  tick(); setInterval(tick,1000); setTimeout(()=>location.reload(),3600000);
+  tick(); setInterval(tick,1000); setTimeout(()=>location.reload(),14400000);
 })();
 
 // ── Tabs ──────────────────────────────────────────────────
