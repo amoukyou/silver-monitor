@@ -1,0 +1,13 @@
+{
+  "name": "silver-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fetch-data.js",
+  "scripts": {
+    "fetch": "node fetch-data.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

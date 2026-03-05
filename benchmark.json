@@ -1,0 +1,38 @@
+{
+  "fetchedAt": "2026-03-05T12:08:11.015Z",
+  "USD": {
+    "source": "U.S. Treasury Daily Yield Curve",
+    "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
+    "date": "03/04/2026",
+    "rates": {
+      "1 Month": 3.75,
+      "6 Month": 3.68,
+      "12 Month": 3.58,
+      "24 Month": 3.54
+    }
+  },
+  "EUR": {
+    "source": "ECB Deposit Facility Rate",
+    "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
+    "date": "5 February 2026",
+    "note": "ECB政策利率，适用于所有期限（非商业银行定存利率）",
+    "rates": {
+      "1 Month": 2,
+      "6 Month": 2,
+      "12 Month": 2,
+      "24 Month": 2
+    }
+  },
+  "SGD": {
+    "source": "HSBC Singapore SGD Fixed Deposit",
+    "sourceUrl": "https://www.hsbc.com.sg/accounts/products/time-deposit/",
+    "date": "2026-03-05",
+    "note": "HSBC新加坡标准定存利率（促销利率，最低存款要求不同）",
+    "rates": {
+      "1 Month": 0.6,
+      "6 Month": 0.75,
+      "12 Month": 0.85,
+      "24 Month": 0.85
+    }
+  }
+}
