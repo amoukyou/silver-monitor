@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name  'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add index.html benchmark.json data.json
+          git add benchmark.json data.json
           git diff --cached --quiet && echo "No changes" || \
             git commit -m "chore: update dashboard $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
