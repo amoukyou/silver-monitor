@@ -109,6 +109,22 @@ header .sub { font-size: 11px; color: #777; margin-top: 2px; }
 .card { background: #fff; border: 1px solid #d0d4de; border-radius: 10px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); position: relative; }
 .card h2 { font-size: 11px; color: #777; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
 .chart-wrap { position: relative; height: 260px; }
+/* Recent trades table */
+.recent-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.recent-table th { background: #f5f6f9; color: #777; font-weight: 600; padding: 6px 8px; border-bottom: 2px solid #d0d4de; text-align: left; font-size: 11px; position: sticky; top: 0; }
+.recent-table td { padding: 6px 8px; border-bottom: 1px solid #eef0f4; }
+.recent-table tr:hover { background: #f9fafb; }
+.recent-table .rate-col { text-align: right; font-weight: 700; }
+.recent-table .vol-col { text-align: right; font-variant-numeric: tabular-nums; }
+.recent-table .net-col { text-align: right; color: #27ae60; font-weight: 600; }
+.recent-table .dur-tag { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 10px; font-weight: 600; background: #f0f0f0; color: #666; }
+.recent-wrap { max-height: 360px; overflow-y: auto; border: 1px solid #e0e2e8; border-radius: 6px; }
+.recent-summary { font-size: 11px; color: #777; margin-bottom: 10px; }
+.recent-summary strong { color: #333; }
+.pager-btn { padding: 4px 12px; border: 1px solid #d0d5e0; background: #fff; color: #555; border-radius: 4px; cursor: pointer; font-size: 11px; }
+.pager-btn:hover { border-color: #b8860b; color: #b8860b; }
+.pager-btn:disabled { opacity: 0.4; cursor: default; }
+.pager-info { font-size: 11px; color: #777; }
 /* Loading */
 .loading-overlay { position: fixed; inset: 0; background: #e4e7ed; z-index: 100; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; }
 .loading-overlay.hidden { display: none; }
@@ -162,12 +178,26 @@ header .sub { font-size: 11px; color: #777; margin-top: 2px; }
 <div class="workspace">
   <div class="tools-panel">
     <div class="tool-tabs">
-      <button class="tool-tab active" data-tool="estimator">利率估算</button>
+      <button class="tool-tab active" data-tool="recent">近期成交</button>
+      <button class="tool-tab" data-tool="estimator">利率估算</button>
       <button class="tool-tab" data-tool="history">订单回顾</button>
       <button class="tool-tab" data-tool="benchmark">基准对比</button>
     </div>
 
-    <div class="tool-body" id="toolEstimator">
+    <div class="tool-body" id="toolRecent">
+      <div class="field-row">
+        <div class="field"><label>币种</label>
+          <select id="recentCur"><option value="SGD">SGD</option><option value="USD" selected>USD</option><option value="EUR">EUR</option></select>
+        </div>
+        <div class="field"><label>期限</label>
+          <select id="recentDur"><option value="all">全部</option><option value="1 Month">1M</option><option value="6 Month">6M</option><option value="12 Month">12M</option><option value="24 Month">24M</option></select>
+        </div>
+      </div>
+      <div id="recentTable"></div>
+      <div id="recentPager" style="display:flex;justify-content:space-between;align-items:center;margin-top:10px"></div>
+    </div>
+
+    <div class="tool-body" id="toolEstimator" style="display:none">
       <div class="field-row">
         <div class="field"><label>币种</label>
           <select id="estCur"><option value="SGD">SGD</option><option value="USD" selected>USD</option><option value="EUR">EUR</option></select>
@@ -313,8 +343,8 @@ document.querySelectorAll('.tool-tab').forEach(function(btn) {
   btn.addEventListener('click', function() {
     document.querySelectorAll('.tool-tab').forEach(function(b){b.classList.remove('active');});
     btn.classList.add('active');
-    ['toolEstimator','toolHistory','toolBenchmark'].forEach(function(id){document.getElementById(id).style.display='none';});
-    var map={estimator:'toolEstimator',history:'toolHistory',benchmark:'toolBenchmark'};
+    ['toolRecent','toolEstimator','toolHistory','toolBenchmark'].forEach(function(id){document.getElementById(id).style.display='none';});
+    var map={recent:'toolRecent',estimator:'toolEstimator',history:'toolHistory',benchmark:'toolBenchmark'};
     document.getElementById(map[btn.dataset.tool]).style.display='';
   });
 });
@@ -348,6 +378,47 @@ function initApp() {
   document.getElementById('spreadToggle').addEventListener('change',function(){showSpread=this.checked;buildCharts(currentDur);});
   document.getElementById('volMedianToggle').addEventListener('change',function(){showVolMedian=this.checked;buildCharts(currentDur);});
   buildCharts('all');
+
+  // Recent trades
+  var recentPage = 0, recentPageSize = 30;
+  function getRecentTrades() {
+    var cur = document.getElementById('recentCur').value;
+    var dur = document.getElementById('recentDur').value;
+    var txs = RAW.transactions.filter(function(t){ return t.currency === cur; });
+    if (dur !== 'all') txs = txs.filter(function(t){ return t.duration === dur; });
+    txs.sort(function(a,b){ return b.date.localeCompare(a.date) || b.rate - a.rate; });
+    return txs;
+  }
+  function renderRecent() {
+    var txs = getRecentTrades();
+    var total = txs.length;
+    var pages = Math.ceil(total / recentPageSize);
+    if (recentPage >= pages) recentPage = Math.max(0, pages - 1);
+    var start = recentPage * recentPageSize;
+    var slice = txs.slice(start, start + recentPageSize);
+    var cur = document.getElementById('recentCur').value;
+    var totalVol = txs.reduce(function(s,t){return s+t.volume;},0);
+    var avgRate = total ? (txs.reduce(function(s,t){return s+t.rate;},0)/total).toFixed(2) : '--';
+
+    var html = '<div class="recent-summary">共 <strong>' + total + '</strong> 笔 · 总额 <strong>' + fmtI(totalVol) + ' ' + cur + '</strong> · 均值 <strong>' + avgRate + '%</strong></div>';
+    html += '<div class="recent-wrap"><table class="recent-table"><thead><tr><th>日期</th><th>期限</th><th class="vol-col">金额</th><th class="rate-col">毛利率</th><th class="net-col">净年化</th></tr></thead><tbody>';
+    for (var i = 0; i < slice.length; i++) {
+      var t = slice[i];
+      var net = toNet(t.rate, t.duration);
+      html += '<tr><td>' + t.date + '</td><td><span class="dur-tag">' + t.duration.replace(' Month','M') + '</span></td><td class="vol-col">' + fmtI(t.volume) + '</td><td class="rate-col">' + t.rate.toFixed(2) + '%</td><td class="net-col">' + net.toFixed(2) + '%</td></tr>';
+    }
+    html += '</tbody></table></div>';
+    document.getElementById('recentTable').innerHTML = html;
+
+    var pager = document.getElementById('recentPager');
+    if (pages <= 1) { pager.innerHTML = '<span class="pager-info">' + total + ' 条记录</span>'; return; }
+    pager.innerHTML = '<button class="pager-btn" id="prevPage"' + (recentPage === 0 ? ' disabled' : '') + '>&laquo; 上一页</button><span class="pager-info">' + (recentPage+1) + ' / ' + pages + '（共 ' + total + ' 条）</span><button class="pager-btn" id="nextPage"' + (recentPage >= pages-1 ? ' disabled' : '') + '>下一页 &raquo;</button>';
+    document.getElementById('prevPage').onclick = function(){ if(recentPage>0){recentPage--;renderRecent();} };
+    document.getElementById('nextPage').onclick = function(){ if(recentPage<pages-1){recentPage++;renderRecent();} };
+  }
+  document.getElementById('recentCur').addEventListener('change', function(){ recentPage=0; renderRecent(); });
+  document.getElementById('recentDur').addEventListener('change', function(){ recentPage=0; renderRecent(); });
+  renderRecent();
 }
 
 // -- #2: Data gaps detection --
