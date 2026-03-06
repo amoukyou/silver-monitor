@@ -185,26 +185,16 @@ header .sub { font-size: 11px; color: #777; margin-top: 2px; }
     </div>
 
     <div class="tool-body" id="toolRecent">
-      <div class="field-row">
-        <div class="field"><label>币种</label>
-          <select id="recentCur"><option value="SGD">SGD</option><option value="USD" selected>USD</option><option value="EUR">EUR</option></select>
-        </div>
-        <div class="field"><label>期限</label>
-          <select id="recentDur"><option value="all">全部</option><option value="1 Month">1M</option><option value="6 Month">6M</option><option value="12 Month">12M</option><option value="24 Month">24M</option></select>
-        </div>
+      <div class="field"><label>期限</label>
+        <select id="recentDur"><option value="all">全部</option><option value="1 Month">1M</option><option value="6 Month">6M</option><option value="12 Month">12M</option><option value="24 Month">24M</option></select>
       </div>
       <div id="recentTable"></div>
       <div id="recentPager" style="display:flex;justify-content:space-between;align-items:center;margin-top:10px"></div>
     </div>
 
     <div class="tool-body" id="toolEstimator" style="display:none">
-      <div class="field-row">
-        <div class="field"><label>币种</label>
-          <select id="estCur"><option value="SGD">SGD</option><option value="USD" selected>USD</option><option value="EUR">EUR</option></select>
-        </div>
-        <div class="field"><label>期限</label>
-          <select id="estDur"><option value="1 Month">1 个月</option><option value="6 Month" selected>6 个月</option><option value="12 Month">12 个月</option><option value="24 Month">24 个月</option></select>
-        </div>
+      <div class="field"><label>期限</label>
+        <select id="estDur"><option value="1 Month">1 个月</option><option value="6 Month" selected>6 个月</option><option value="12 Month">12 个月</option><option value="24 Month">24 个月</option></select>
       </div>
       <div class="field"><label>出借金额</label><input type="text" id="estAmt" value="100,000" inputmode="decimal" /></div>
       <button class="calc-btn" onclick="calcEstimate()">开始计算</button>
@@ -213,13 +203,8 @@ header .sub { font-size: 11px; color: #777; margin-top: 2px; }
     </div>
 
     <div class="tool-body" id="toolHistory" style="display:none">
-      <div class="field-row">
-        <div class="field"><label>币种</label>
-          <select id="hisCur"><option value="SGD">SGD</option><option value="USD" selected>USD</option><option value="EUR">EUR</option></select>
-        </div>
-        <div class="field"><label>期限</label>
-          <select id="hisDur"><option value="1 Month">1 个月</option><option value="6 Month" selected>6 个月</option><option value="12 Month">12 个月</option><option value="24 Month">24 个月</option></select>
-        </div>
+      <div class="field"><label>期限</label>
+        <select id="hisDur"><option value="1 Month">1 个月</option><option value="6 Month" selected>6 个月</option><option value="12 Month">12 个月</option><option value="24 Month">24 个月</option></select>
       </div>
       <div class="field"><label>出借金额</label><input type="text" id="hisAmt" value="100,000" inputmode="decimal" /></div>
       <div class="field"><label>出借日期</label><input type="date" id="hisDate" /></div>
@@ -379,11 +364,7 @@ function initApp() {
     document.querySelectorAll('.cur-btn').forEach(function(b){b.classList.remove('active');});
     var active = document.querySelector('.cur-btn[data-cur="'+cur+'"]');
     if (active) active.classList.add('active');
-    // sync left: all tool selects (skip if it was the trigger)
-    ['recentCur','estCur','hisCur'].forEach(function(id){
-      var el = document.getElementById(id);
-      if (el && el.value !== cur && cur !== 'ALL') el.value = cur;
-    });
+    // sync left: refresh recent trades table
     buildCharts(currentDur);
     if (typeof renderRecent === 'function') renderRecent();
   }
@@ -396,7 +377,7 @@ function initApp() {
   // Recent trades
   var recentPage = 0, recentPageSize = 30;
   function getRecentTrades() {
-    var cur = document.getElementById('recentCur').value;
+    var cur = (currentCur==='ALL'?'USD':currentCur);
     var dur = document.getElementById('recentDur').value;
     var txs = RAW.transactions.filter(function(t){ return t.currency === cur; });
     if (dur !== 'all') txs = txs.filter(function(t){ return t.duration === dur; });
@@ -410,7 +391,7 @@ function initApp() {
     if (recentPage >= pages) recentPage = Math.max(0, pages - 1);
     var start = recentPage * recentPageSize;
     var slice = txs.slice(start, start + recentPageSize);
-    var cur = document.getElementById('recentCur').value;
+    var cur = (currentCur==='ALL'?'USD':currentCur);
     var totalVol = txs.reduce(function(s,t){return s+t.volume;},0);
     var avgRate = total ? (txs.reduce(function(s,t){return s+t.rate;},0)/total).toFixed(2) : '--';
 
@@ -430,10 +411,7 @@ function initApp() {
     document.getElementById('prevPage').onclick = function(){ if(recentPage>0){recentPage--;renderRecent();} };
     document.getElementById('nextPage').onclick = function(){ if(recentPage<pages-1){recentPage++;renderRecent();} };
   }
-  document.getElementById('recentCur').addEventListener('change', function(){ recentPage=0; syncCurrency(this.value,'tool'); });
   document.getElementById('recentDur').addEventListener('change', function(){ recentPage=0; renderRecent(); });
-  document.getElementById('estCur').addEventListener('change', function(){ syncCurrency(this.value,'tool'); });
-  document.getElementById('hisCur').addEventListener('change', function(){ syncCurrency(this.value,'tool'); });
   renderRecent();
 }
 
@@ -632,7 +610,7 @@ function buildCharts(dur){
 
 // -- Rate estimator --
 function calcEstimate(){
-  var cur=document.getElementById('estCur').value, dur=document.getElementById('estDur').value;
+  var cur=currentCur==='ALL'?'USD':currentCur, dur=document.getElementById('estDur').value;
   var amt=parseFloat(document.getElementById('estAmt').value.replace(/,/g,''))||0;
   var box=document.getElementById('estResult'), nd=document.getElementById('estNodata');
   var cutoff=new Date(); cutoff.setDate(cutoff.getDate()-30);
@@ -653,7 +631,7 @@ function calcEstimate(){
 
 // -- Order review --
 function calcHistory(){
-  var cur=document.getElementById('hisCur').value, dur=document.getElementById('hisDur').value;
+  var cur=currentCur==='ALL'?'USD':currentCur, dur=document.getElementById('hisDur').value;
   var amt=parseFloat(document.getElementById('hisAmt').value.replace(/,/g,''))||0;
   var ds=document.getElementById('hisDate').value, rate=parseFloat(document.getElementById('hisRate').value);
   var box=document.getElementById('hisResult');
