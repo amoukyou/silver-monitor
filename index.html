@@ -373,7 +373,21 @@ function initApp() {
 
   // Charts & filters
   document.querySelectorAll('.filter-btn').forEach(function(btn){btn.addEventListener('click',function(){document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});btn.classList.add('active');currentDur=btn.dataset.dur;buildCharts(currentDur);});});
-  document.querySelectorAll('.cur-btn').forEach(function(btn){btn.addEventListener('click',function(){document.querySelectorAll('.cur-btn').forEach(function(b){b.classList.remove('active');});btn.classList.add('active');currentCur=btn.dataset.cur;buildCharts(currentDur);});});
+  function syncCurrency(cur, source) {
+    currentCur = cur;
+    // sync right: chart filter buttons
+    document.querySelectorAll('.cur-btn').forEach(function(b){b.classList.remove('active');});
+    var active = document.querySelector('.cur-btn[data-cur="'+cur+'"]');
+    if (active) active.classList.add('active');
+    // sync left: all tool selects (skip if it was the trigger)
+    ['recentCur','estCur','hisCur'].forEach(function(id){
+      var el = document.getElementById(id);
+      if (el && el.value !== cur && cur !== 'ALL') el.value = cur;
+    });
+    buildCharts(currentDur);
+    if (typeof renderRecent === 'function') renderRecent();
+  }
+  document.querySelectorAll('.cur-btn').forEach(function(btn){btn.addEventListener('click',function(){syncCurrency(btn.dataset.cur,'chart');});});
   document.getElementById('netToggle').addEventListener('change',function(){showNet=this.checked;buildCharts(currentDur);});
   document.getElementById('spreadToggle').addEventListener('change',function(){showSpread=this.checked;buildCharts(currentDur);});
   document.getElementById('volMedianToggle').addEventListener('change',function(){showVolMedian=this.checked;buildCharts(currentDur);});
@@ -416,8 +430,10 @@ function initApp() {
     document.getElementById('prevPage').onclick = function(){ if(recentPage>0){recentPage--;renderRecent();} };
     document.getElementById('nextPage').onclick = function(){ if(recentPage<pages-1){recentPage++;renderRecent();} };
   }
-  document.getElementById('recentCur').addEventListener('change', function(){ recentPage=0; renderRecent(); });
+  document.getElementById('recentCur').addEventListener('change', function(){ recentPage=0; syncCurrency(this.value,'tool'); });
   document.getElementById('recentDur').addEventListener('change', function(){ recentPage=0; renderRecent(); });
+  document.getElementById('estCur').addEventListener('change', function(){ syncCurrency(this.value,'tool'); });
+  document.getElementById('hisCur').addEventListener('change', function(){ syncCurrency(this.value,'tool'); });
   renderRecent();
 }
 
