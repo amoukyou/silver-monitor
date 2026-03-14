@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-14T16:39:38.697Z",
+  "updatedAt": "2026-03-14T20:36:34.923Z",
   "fromDate": "2025-09-14",
   "toDate": "2026-03-14",
   "transactions": [
@@ -12656,6 +12656,13 @@
       "date": "2026-02-08",
       "currency": "SGD",
       "duration": "1 Month",
+      "volume": 37500,
+      "rate": 6.5
+    },
+    {
+      "date": "2026-02-08",
+      "currency": "SGD",
+      "duration": "1 Month",
       "volume": 20500,
       "rate": 5.75
     },
@@ -12819,13 +12826,6 @@
       "duration": "1 Month",
       "volume": 4500,
       "rate": 6.25
-    },
-    {
-      "date": "2026-02-08",
-      "currency": "SGD",
-      "duration": "1 Month",
-      "volume": 37500,
-      "rate": 6.5
     },
     {
       "date": "2026-02-09",
@@ -27472,6 +27472,41 @@
       "rate": 8.75
     },
     {
+      "date": "2026-02-12",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 69500,
+      "rate": 7
+    },
+    {
+      "date": "2026-02-13",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 92000,
+      "rate": 8
+    },
+    {
+      "date": "2026-02-13",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 37000,
+      "rate": 7
+    },
+    {
+      "date": "2026-02-11",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 36500,
+      "rate": 7.75
+    },
+    {
+      "date": "2026-02-11",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 4500,
+      "rate": 7.75
+    },
+    {
       "date": "2026-02-08",
       "currency": "USD",
       "duration": "1 Month",
@@ -27624,41 +27659,6 @@
       "duration": "1 Month",
       "volume": 14500,
       "rate": 7.5
-    },
-    {
-      "date": "2026-02-12",
-      "currency": "USD",
-      "duration": "1 Month",
-      "volume": 69500,
-      "rate": 7
-    },
-    {
-      "date": "2026-02-13",
-      "currency": "USD",
-      "duration": "1 Month",
-      "volume": 92000,
-      "rate": 8
-    },
-    {
-      "date": "2026-02-13",
-      "currency": "USD",
-      "duration": "1 Month",
-      "volume": 37000,
-      "rate": 7
-    },
-    {
-      "date": "2026-02-11",
-      "currency": "USD",
-      "duration": "1 Month",
-      "volume": 36500,
-      "rate": 7.75
-    },
-    {
-      "date": "2026-02-11",
-      "currency": "USD",
-      "duration": "1 Month",
-      "volume": 4500,
-      "rate": 7.75
     },
     {
       "date": "2026-02-15",
