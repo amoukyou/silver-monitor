@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-17T02:39:23.603Z",
+  "updatedAt": "2026-03-17T05:24:00.127Z",
   "fromDate": "2025-09-17",
   "toDate": "2026-03-17",
   "transactions": [
@@ -15901,6 +15901,13 @@
       "rate": 6.5
     },
     {
+      "date": "2026-03-17",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 64500,
+      "rate": 6.5
+    },
+    {
       "date": "2025-09-17",
       "currency": "SGD",
       "duration": "6 Month",
@@ -23839,6 +23846,13 @@
       "rate": 7
     },
     {
+      "date": "2026-03-17",
+      "currency": "SGD",
+      "duration": "12 Month",
+      "volume": 30000,
+      "rate": 6.25
+    },
+    {
       "date": "2025-09-22",
       "currency": "SGD",
       "duration": "24 Month",
@@ -28499,6 +28513,13 @@
       "duration": "1 Month",
       "volume": 20000,
       "rate": 7.5
+    },
+    {
+      "date": "2026-03-17",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 10000,
+      "rate": 7.75
     },
     {
       "date": "2025-09-17",
@@ -34232,6 +34253,13 @@
       "duration": "24 Month",
       "volume": 5000,
       "rate": 7.75
+    },
+    {
+      "date": "2026-03-17",
+      "currency": "USD",
+      "duration": "24 Month",
+      "volume": 20000,
+      "rate": 8.5
     }
   ],
   "weekly": [
@@ -36599,9 +36627,9 @@
       "week": "2026-03-16",
       "currency": "SGD",
       "duration": "1 Month",
-      "avgRate": 6.392857142857143,
-      "volume": 792000,
-      "count": 14
+      "avgRate": 6.4,
+      "volume": 856500,
+      "count": 15
     },
     {
       "week": "2026-03-16",
@@ -36615,17 +36643,17 @@
       "week": "2026-03-16",
       "currency": "SGD",
       "duration": "12 Month",
-      "avgRate": 6.75,
-      "volume": 90500,
-      "count": 3
+      "avgRate": 6.625,
+      "volume": 120500,
+      "count": 4
     },
     {
       "week": "2026-03-16",
       "currency": "USD",
       "duration": "1 Month",
-      "avgRate": 7.3,
-      "volume": 164500,
-      "count": 5
+      "avgRate": 7.375,
+      "volume": 174500,
+      "count": 6
     },
     {
       "week": "2026-03-16",
@@ -36642,6 +36670,14 @@
       "avgRate": 7.714285714285714,
       "volume": 953500,
       "count": 7
+    },
+    {
+      "week": "2026-03-16",
+      "currency": "USD",
+      "duration": "24 Month",
+      "avgRate": 8.5,
+      "volume": 20000,
+      "count": 1
     }
   ]
 }
