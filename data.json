@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-21T08:41:09.664Z",
+  "updatedAt": "2026-03-21T13:02:49.270Z",
   "fromDate": "2025-09-21",
   "toDate": "2026-03-21",
   "transactions": [
@@ -16062,6 +16062,20 @@
       "rate": 6
     },
     {
+      "date": "2026-03-21",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 5000,
+      "rate": 4.5
+    },
+    {
+      "date": "2026-03-21",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 33500,
+      "rate": 5.75
+    },
+    {
       "date": "2025-09-21",
       "currency": "SGD",
       "duration": "6 Month",
@@ -21604,6 +21618,13 @@
       "duration": "6 Month",
       "volume": 72000,
       "rate": 6.75
+    },
+    {
+      "date": "2026-03-21",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 66000,
+      "rate": 6.25
     },
     {
       "date": "2025-09-21",
@@ -28884,6 +28905,13 @@
       "duration": "1 Month",
       "volume": 8000,
       "rate": 7
+    },
+    {
+      "date": "2026-03-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 79500,
+      "rate": 8.5
     },
     {
       "date": "2025-09-22",
@@ -37024,17 +37052,17 @@
       "week": "2026-03-16",
       "currency": "SGD",
       "duration": "1 Month",
-      "avgRate": 6.213541666666667,
-      "volume": 3525000,
-      "count": 48
+      "avgRate": 6.17,
+      "volume": 3563500,
+      "count": 50
     },
     {
       "week": "2026-03-16",
       "currency": "SGD",
       "duration": "6 Month",
-      "avgRate": 6.357142857142857,
-      "volume": 1832000,
-      "count": 28
+      "avgRate": 6.353448275862069,
+      "volume": 1898000,
+      "count": 29
     },
     {
       "week": "2026-03-16",
@@ -37056,9 +37084,9 @@
       "week": "2026-03-16",
       "currency": "USD",
       "duration": "1 Month",
-      "avgRate": 7.2625,
-      "volume": 1107000,
-      "count": 20
+      "avgRate": 7.321428571428571,
+      "volume": 1186500,
+      "count": 21
     },
     {
       "week": "2026-03-16",
