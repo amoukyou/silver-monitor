@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-14T06:03:54.649Z",
+  "updatedAt": "2026-04-14T09:25:58.377Z",
   "fromDate": "2025-10-14",
   "toDate": "2026-04-14",
   "transactions": [
@@ -21753,6 +21753,41 @@
       "rate": 6
     },
     {
+      "date": "2026-04-14",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 131000,
+      "rate": 6.25
+    },
+    {
+      "date": "2026-04-14",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 5000,
+      "rate": 5.75
+    },
+    {
+      "date": "2026-04-14",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 10000,
+      "rate": 5.75
+    },
+    {
+      "date": "2026-04-14",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 51500,
+      "rate": 6
+    },
+    {
+      "date": "2026-04-14",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 38000,
+      "rate": 6
+    },
+    {
       "date": "2025-10-14",
       "currency": "SGD",
       "duration": "12 Month",
@@ -24138,6 +24173,20 @@
       "duration": "12 Month",
       "volume": 12000,
       "rate": 5
+    },
+    {
+      "date": "2026-04-14",
+      "currency": "SGD",
+      "duration": "12 Month",
+      "volume": 5000,
+      "rate": 5
+    },
+    {
+      "date": "2026-04-14",
+      "currency": "SGD",
+      "duration": "12 Month",
+      "volume": 7000,
+      "rate": 5.5
     },
     {
       "date": "2025-10-14",
@@ -36995,17 +37044,17 @@
       "week": "2026-04-13",
       "currency": "SGD",
       "duration": "6 Month",
-      "avgRate": 5,
-      "volume": 91000,
-      "count": 5
+      "avgRate": 5.475,
+      "volume": 326500,
+      "count": 10
     },
     {
       "week": "2026-04-13",
       "currency": "SGD",
       "duration": "12 Month",
-      "avgRate": 5,
-      "volume": 12000,
-      "count": 1
+      "avgRate": 5.166666666666667,
+      "volume": 24000,
+      "count": 3
     },
     {
       "week": "2026-04-13",
