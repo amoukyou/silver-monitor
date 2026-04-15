@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-15T03:20:06.708Z",
+  "updatedAt": "2026-04-15T06:03:50.803Z",
   "fromDate": "2025-10-15",
   "toDate": "2026-04-15",
   "transactions": [
@@ -571,18 +571,18 @@
       "rate": 6.5
     },
     {
-      "date": "2025-12-13",
-      "currency": "EUR",
-      "duration": "6 Month",
-      "volume": 7000,
-      "rate": 6
-    },
-    {
       "date": "2025-12-14",
       "currency": "EUR",
       "duration": "6 Month",
       "volume": 47000,
       "rate": 7.5
+    },
+    {
+      "date": "2025-12-13",
+      "currency": "EUR",
+      "duration": "6 Month",
+      "volume": 7000,
+      "rate": 6
     },
     {
       "date": "2025-12-15",
@@ -16356,6 +16356,27 @@
       "rate": 5.5
     },
     {
+      "date": "2026-04-15",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 63000,
+      "rate": 5.5
+    },
+    {
+      "date": "2026-04-15",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 10000,
+      "rate": 5.5
+    },
+    {
+      "date": "2026-04-15",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 91000,
+      "rate": 5.5
+    },
+    {
       "date": "2025-10-16",
       "currency": "SGD",
       "duration": "6 Month",
@@ -25132,6 +25153,13 @@
       "duration": "24 Month",
       "volume": 15000,
       "rate": 6.5
+    },
+    {
+      "date": "2026-04-15",
+      "currency": "SGD",
+      "duration": "24 Month",
+      "volume": 15000,
+      "rate": 7.25
     },
     {
       "date": "2025-10-20",
@@ -37260,9 +37288,9 @@
       "week": "2026-04-13",
       "currency": "SGD",
       "duration": "1 Month",
-      "avgRate": 5.365853658536586,
-      "volume": 1632500,
-      "count": 41
+      "avgRate": 5.375,
+      "volume": 1796500,
+      "count": 44
     },
     {
       "week": "2026-04-13",
@@ -37284,9 +37312,9 @@
       "week": "2026-04-13",
       "currency": "SGD",
       "duration": "24 Month",
-      "avgRate": 6.5,
-      "volume": 15000,
-      "count": 1
+      "avgRate": 6.875,
+      "volume": 30000,
+      "count": 2
     },
     {
       "week": "2026-04-13",
