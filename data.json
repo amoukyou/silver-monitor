@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-18T08:58:25.508Z",
+  "updatedAt": "2026-04-18T13:14:45.254Z",
   "fromDate": "2025-10-18",
   "toDate": "2026-04-18",
   "transactions": [
@@ -16832,13 +16832,6 @@
       "rate": 5
     },
     {
-      "date": "2025-11-02",
-      "currency": "SGD",
-      "duration": "6 Month",
-      "volume": 10000,
-      "rate": 5
-    },
-    {
       "date": "2025-11-03",
       "currency": "SGD",
       "duration": "6 Month",
@@ -16858,13 +16851,6 @@
       "duration": "6 Month",
       "volume": 10000,
       "rate": 5.5
-    },
-    {
-      "date": "2025-11-03",
-      "currency": "SGD",
-      "duration": "6 Month",
-      "volume": 10000,
-      "rate": 5
     },
     {
       "date": "2025-11-03",
@@ -17054,6 +17040,20 @@
       "duration": "6 Month",
       "volume": 4000,
       "rate": 4.75
+    },
+    {
+      "date": "2025-11-03",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 10000,
+      "rate": 5
+    },
+    {
+      "date": "2025-11-02",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 10000,
+      "rate": 5
     },
     {
       "date": "2025-11-08",
@@ -31210,6 +31210,27 @@
       "rate": 5.5
     },
     {
+      "date": "2026-04-18",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 97000,
+      "rate": 6
+    },
+    {
+      "date": "2026-04-18",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 19000,
+      "rate": 5.75
+    },
+    {
+      "date": "2026-04-18",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 97000,
+      "rate": 6
+    },
+    {
       "date": "2025-10-19",
       "currency": "USD",
       "duration": "12 Month",
@@ -37151,9 +37172,9 @@
       "week": "2026-04-13",
       "currency": "USD",
       "duration": "6 Month",
-      "avgRate": 6.461538461538462,
-      "volume": 422500,
-      "count": 13
+      "avgRate": 6.359375,
+      "volume": 635500,
+      "count": 16
     },
     {
       "week": "2026-04-13",
