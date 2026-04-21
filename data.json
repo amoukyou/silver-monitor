@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-21T09:45:25.211Z",
+  "updatedAt": "2026-04-21T13:57:32.563Z",
   "fromDate": "2025-10-21",
   "toDate": "2026-04-21",
   "transactions": [
@@ -1773,6 +1773,20 @@
       "duration": "12 Month",
       "volume": 20000,
       "rate": 5
+    },
+    {
+      "date": "2026-04-21",
+      "currency": "EUR",
+      "duration": "12 Month",
+      "volume": 10000,
+      "rate": 6.25
+    },
+    {
+      "date": "2026-04-21",
+      "currency": "EUR",
+      "duration": "12 Month",
+      "volume": 15500,
+      "rate": 7
     },
     {
       "date": "2025-10-24",
@@ -37044,6 +37058,14 @@
       "avgRate": 5.5,
       "volume": 5500,
       "count": 1
+    },
+    {
+      "week": "2026-04-20",
+      "currency": "EUR",
+      "duration": "12 Month",
+      "avgRate": 6.625,
+      "volume": 25500,
+      "count": 2
     },
     {
       "week": "2026-04-20",
