@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-21T06:06:45.620Z",
+  "updatedAt": "2026-04-21T09:45:25.211Z",
   "fromDate": "2025-10-21",
   "toDate": "2026-04-21",
   "transactions": [
@@ -29026,6 +29026,13 @@
       "rate": 6
     },
     {
+      "date": "2026-04-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 5000,
+      "rate": 6
+    },
+    {
       "date": "2025-10-22",
       "currency": "USD",
       "duration": "6 Month",
@@ -33373,6 +33380,13 @@
       "rate": 7
     },
     {
+      "date": "2026-04-21",
+      "currency": "USD",
+      "duration": "12 Month",
+      "volume": 6000,
+      "rate": 5.25
+    },
+    {
       "date": "2025-10-21",
       "currency": "USD",
       "duration": "24 Month",
@@ -37068,8 +37082,8 @@
       "currency": "USD",
       "duration": "1 Month",
       "avgRate": 6,
-      "volume": 8000,
-      "count": 1
+      "volume": 13000,
+      "count": 2
     },
     {
       "week": "2026-04-20",
@@ -37083,9 +37097,9 @@
       "week": "2026-04-20",
       "currency": "USD",
       "duration": "12 Month",
-      "avgRate": 7.125,
-      "volume": 171000,
-      "count": 2
+      "avgRate": 6.5,
+      "volume": 177000,
+      "count": 3
     }
   ]
 }
