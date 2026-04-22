@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-04-22T17:09:10.933Z",
+  "fetchedAt": "2026-04-22T21:02:24.777Z",
   "USD": {
     "source": "U.S. Treasury Daily Yield Curve",
     "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
-    "date": "04/21/2026",
+    "date": "04/22/2026",
     "rates": {
-      "1 Month": 3.67,
-      "6 Month": 3.73,
+      "1 Month": 3.68,
+      "6 Month": 3.72,
       "12 Month": 3.69,
-      "24 Month": 3.78
+      "24 Month": 3.79
     }
   },
   "EUR": {
