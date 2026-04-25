@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-25T02:56:39.077Z",
+  "updatedAt": "2026-04-25T05:51:13.229Z",
   "fromDate": "2025-10-25",
   "toDate": "2026-04-25",
   "transactions": [
@@ -34631,6 +34631,13 @@
       "duration": "24 Month",
       "volume": 8500,
       "rate": 7.75
+    },
+    {
+      "date": "2026-04-25",
+      "currency": "USD",
+      "duration": "24 Month",
+      "volume": 20500,
+      "rate": 8
     }
   ],
   "weekly": [
@@ -37062,9 +37069,9 @@
       "week": "2026-04-20",
       "currency": "USD",
       "duration": "24 Month",
-      "avgRate": 7.75,
-      "volume": 8500,
-      "count": 1
+      "avgRate": 7.875,
+      "volume": 29000,
+      "count": 2
     }
   ]
 }
