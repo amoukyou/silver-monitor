@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-21T11:31:40.576Z",
+  "updatedAt": "2026-05-21T15:40:48.071Z",
   "fromDate": "2025-11-21",
   "toDate": "2026-05-21",
   "transactions": [
@@ -21312,6 +21312,13 @@
       "rate": 5.75
     },
     {
+      "date": "2026-05-21",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 20000,
+      "rate": 4
+    },
+    {
       "date": "2025-11-21",
       "currency": "SGD",
       "duration": "12 Month",
@@ -28655,6 +28662,20 @@
       "rate": 6.25
     },
     {
+      "date": "2026-05-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 25000,
+      "rate": 6
+    },
+    {
+      "date": "2026-05-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 7000,
+      "rate": 6
+    },
+    {
       "date": "2025-11-21",
       "currency": "USD",
       "duration": "6 Month",
@@ -32785,6 +32806,13 @@
       "rate": 8
     },
     {
+      "date": "2026-05-21",
+      "currency": "USD",
+      "duration": "12 Month",
+      "volume": 29000,
+      "rate": 7.5
+    },
+    {
       "date": "2025-11-25",
       "currency": "USD",
       "duration": "24 Month",
@@ -36367,9 +36395,9 @@
       "week": "2026-05-18",
       "currency": "SGD",
       "duration": "6 Month",
-      "avgRate": 4.833333333333333,
-      "volume": 294000,
-      "count": 9
+      "avgRate": 4.75,
+      "volume": 314000,
+      "count": 10
     },
     {
       "week": "2026-05-18",
@@ -36383,9 +36411,9 @@
       "week": "2026-05-18",
       "currency": "USD",
       "duration": "1 Month",
-      "avgRate": 6.5625,
-      "volume": 190500,
-      "count": 4
+      "avgRate": 6.375,
+      "volume": 222500,
+      "count": 6
     },
     {
       "week": "2026-05-18",
@@ -36399,9 +36427,9 @@
       "week": "2026-05-18",
       "currency": "USD",
       "duration": "12 Month",
-      "avgRate": 6.5625,
-      "volume": 259500,
-      "count": 4
+      "avgRate": 6.75,
+      "volume": 288500,
+      "count": 5
     },
     {
       "week": "2026-05-18",
