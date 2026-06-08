@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-08T12:38:36.738Z",
+  "updatedAt": "2026-06-08T18:29:05.584Z",
   "fromDate": "2025-12-08",
   "toDate": "2026-06-08",
   "transactions": [
@@ -16391,6 +16391,41 @@
       "rate": 4.5
     },
     {
+      "date": "2026-06-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 8500,
+      "rate": 4.75
+    },
+    {
+      "date": "2026-06-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 61500,
+      "rate": 4.5
+    },
+    {
+      "date": "2026-06-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 36500,
+      "rate": 4.5
+    },
+    {
+      "date": "2026-06-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 218000,
+      "rate": 4.75
+    },
+    {
+      "date": "2026-06-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 41000,
+      "rate": 4.5
+    },
+    {
       "date": "2025-12-08",
       "currency": "SGD",
       "duration": "6 Month",
@@ -29117,6 +29152,27 @@
       "rate": 7.25
     },
     {
+      "date": "2026-06-08",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 15000,
+      "rate": 6
+    },
+    {
+      "date": "2026-06-08",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 70000,
+      "rate": 7.5
+    },
+    {
+      "date": "2026-06-08",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 16500,
+      "rate": 7.75
+    },
+    {
       "date": "2025-12-08",
       "currency": "USD",
       "duration": "6 Month",
@@ -36770,9 +36826,9 @@
       "week": "2026-06-08",
       "currency": "SGD",
       "duration": "1 Month",
-      "avgRate": 4.722222222222222,
-      "volume": 2245500,
-      "count": 27
+      "avgRate": 4.703125,
+      "volume": 2611000,
+      "count": 32
     },
     {
       "week": "2026-06-08",
@@ -36794,9 +36850,9 @@
       "week": "2026-06-08",
       "currency": "USD",
       "duration": "1 Month",
-      "avgRate": 6.78125,
-      "volume": 1163500,
-      "count": 16
+      "avgRate": 6.828947368421052,
+      "volume": 1265000,
+      "count": 19
     },
     {
       "week": "2026-06-08",
