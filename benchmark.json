@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-11T12:13:56.202Z",
+  "fetchedAt": "2026-06-11T18:49:50.464Z",
   "USD": {
     "source": "U.S. Treasury Daily Yield Curve",
     "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
@@ -17,10 +17,10 @@
     "date": "11 June 2026",
     "note": "ECB政策利率，适用于所有期限（非商业银行定存利率）",
     "rates": {
-      "1 Month": 2,
-      "6 Month": 2,
-      "12 Month": 2,
-      "24 Month": 2
+      "1 Month": 2.25,
+      "6 Month": 2.25,
+      "12 Month": 2.25,
+      "24 Month": 2.25
     }
   },
   "SGD": {
