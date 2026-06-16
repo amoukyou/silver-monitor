@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-16T05:03:54.875Z",
+  "fetchedAt": "2026-06-16T12:59:03.066Z",
   "USD": {
     "source": "U.S. Treasury Daily Yield Curve",
     "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
@@ -26,13 +26,12 @@
   "SGD": {
     "source": "HSBC Singapore SGD Fixed Deposit",
     "sourceUrl": "https://www.hsbc.com.sg/accounts/products/time-deposit/",
-    "date": "2026-06-15",
+    "date": "2026-06-16",
     "note": "HSBC新加坡标准定存利率（促销利率，最低存款要求不同）",
     "rates": {
       "6 Month": 0.7,
       "12 Month": 0.8,
       "24 Month": 0.8
-    },
-    "fromCache": true
+    }
   }
 }
