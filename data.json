@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T11:20:12.008Z",
+  "updatedAt": "2026-06-21T14:23:01.812Z",
   "fromDate": "2025-12-21",
   "toDate": "2026-06-21",
   "transactions": [
@@ -16181,6 +16181,13 @@
       "rate": 4.25
     },
     {
+      "date": "2026-06-21",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 99500,
+      "rate": 5
+    },
+    {
       "date": "2025-12-21",
       "currency": "SGD",
       "duration": "6 Month",
@@ -21281,6 +21288,20 @@
       "currency": "SGD",
       "duration": "6 Month",
       "volume": 32000,
+      "rate": 4.75
+    },
+    {
+      "date": "2026-06-21",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 21500,
+      "rate": 4.75
+    },
+    {
+      "date": "2026-06-21",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 41000,
       "rate": 4.75
     },
     {
@@ -28744,6 +28765,13 @@
       "duration": "1 Month",
       "volume": 146000,
       "rate": 7.75
+    },
+    {
+      "date": "2026-06-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 35000,
+      "rate": 6.25
     },
     {
       "date": "2025-12-21",
@@ -36229,17 +36257,17 @@
       "week": "2026-06-15",
       "currency": "SGD",
       "duration": "1 Month",
-      "avgRate": 4.532051282051282,
-      "volume": 3922000,
-      "count": 78
+      "avgRate": 4.537974683544304,
+      "volume": 4021500,
+      "count": 79
     },
     {
       "week": "2026-06-15",
       "currency": "SGD",
       "duration": "6 Month",
-      "avgRate": 4.630952380952381,
-      "volume": 663500,
-      "count": 21
+      "avgRate": 4.641304347826087,
+      "volume": 726000,
+      "count": 23
     },
     {
       "week": "2026-06-15",
@@ -36261,9 +36289,9 @@
       "week": "2026-06-15",
       "currency": "USD",
       "duration": "1 Month",
-      "avgRate": 6.125,
-      "volume": 971500,
-      "count": 16
+      "avgRate": 6.132352941176471,
+      "volume": 1006500,
+      "count": 17
     },
     {
       "week": "2026-06-15",
