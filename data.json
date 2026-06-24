@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T10:56:28.370Z",
+  "updatedAt": "2026-06-24T14:43:32.099Z",
   "fromDate": "2025-12-24",
   "toDate": "2026-06-24",
   "transactions": [
@@ -1465,6 +1465,13 @@
       "duration": "12 Month",
       "volume": 14000,
       "rate": 6
+    },
+    {
+      "date": "2026-06-24",
+      "currency": "EUR",
+      "duration": "12 Month",
+      "volume": 7000,
+      "rate": 6.5
     },
     {
       "date": "2026-01-05",
@@ -16214,6 +16221,20 @@
       "duration": "1 Month",
       "volume": 55000,
       "rate": 4.5
+    },
+    {
+      "date": "2026-06-24",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 91000,
+      "rate": 5.25
+    },
+    {
+      "date": "2026-06-24",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 20000,
+      "rate": 3.75
     },
     {
       "date": "2025-12-24",
@@ -33226,13 +33247,6 @@
       "rate": 8
     },
     {
-      "date": "2026-01-28",
-      "currency": "USD",
-      "duration": "24 Month",
-      "volume": 50000,
-      "rate": 8
-    },
-    {
       "date": "2026-01-31",
       "currency": "USD",
       "duration": "24 Month",
@@ -33259,6 +33273,13 @@
       "duration": "24 Month",
       "volume": 190000,
       "rate": 9
+    },
+    {
+      "date": "2026-01-28",
+      "currency": "USD",
+      "duration": "24 Month",
+      "volume": 50000,
+      "rate": 8
     },
     {
       "date": "2026-02-01",
@@ -36312,9 +36333,9 @@
       "week": "2026-06-22",
       "currency": "EUR",
       "duration": "12 Month",
-      "avgRate": 6,
-      "volume": 14000,
-      "count": 1
+      "avgRate": 6.25,
+      "volume": 21000,
+      "count": 2
     },
     {
       "week": "2026-06-22",
@@ -36328,9 +36349,9 @@
       "week": "2026-06-22",
       "currency": "SGD",
       "duration": "1 Month",
-      "avgRate": 4.3940677966101696,
-      "volume": 4409000,
-      "count": 59
+      "avgRate": 4.397540983606557,
+      "volume": 4520000,
+      "count": 61
     },
     {
       "week": "2026-06-22",
