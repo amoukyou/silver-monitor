@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-30T11:14:36.561Z",
+  "fetchedAt": "2026-06-30T14:30:20.755Z",
   "USD": {
     "source": "U.S. Treasury Daily Yield Curve",
     "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
@@ -29,10 +29,9 @@
     "date": "2026-06-30",
     "note": "HSBC新加坡标准定存利率（促销利率，最低存款要求不同）",
     "rates": {
-      "6 Month": 0.7,
-      "12 Month": 0.8,
-      "24 Month": 0.8
-    },
-    "fromCache": true
+      "6 Month": 0.75,
+      "12 Month": 0.85,
+      "24 Month": 0.85
+    }
   }
 }
