@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-07-07T18:04:43.028Z",
+  "fetchedAt": "2026-07-07T21:34:52.372Z",
   "USD": {
     "source": "U.S. Treasury Daily Yield Curve",
     "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
-    "date": "07/06/2026",
+    "date": "07/07/2026",
     "rates": {
       "1 Month": 3.69,
-      "6 Month": 3.98,
-      "12 Month": 3.95,
-      "24 Month": 4.13
+      "6 Month": 3.99,
+      "12 Month": 4.06,
+      "24 Month": 4.19
     }
   },
   "EUR": {
@@ -21,7 +21,8 @@
       "6 Month": 2.25,
       "12 Month": 2.25,
       "24 Month": 2.25
-    }
+    },
+    "fromCache": true
   },
   "SGD": {
     "source": "HSBC Singapore SGD Fixed Deposit",
