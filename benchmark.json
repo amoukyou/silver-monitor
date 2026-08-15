@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-15T01:35:10.792Z",
+  "fetchedAt": "2026-08-15T04:36:21.446Z",
   "USD": {
     "source": "U.S. Treasury Daily Yield Curve",
     "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
@@ -21,7 +21,8 @@
       "6 Month": 2.25,
       "12 Month": 2.25,
       "24 Month": 2.25
-    }
+    },
+    "fromCache": true
   },
   "SGD": {
     "source": "HSBC Singapore SGD Fixed Deposit",
