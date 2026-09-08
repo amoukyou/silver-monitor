@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T03:59:57.339Z",
+  "updatedAt": "2026-09-08T08:46:09.456Z",
   "fromDate": "2026-03-08",
   "toDate": "2026-09-08",
   "transactions": [
@@ -15726,6 +15726,90 @@
       "rate": 4.5
     },
     {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 109500,
+      "rate": 5
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 5000,
+      "rate": 4.25
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 69500,
+      "rate": 4.25
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 55000,
+      "rate": 4.5
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 13000,
+      "rate": 4.5
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 105500,
+      "rate": 4.5
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 105000,
+      "rate": 4.5
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 52000,
+      "rate": 4.5
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 5500,
+      "rate": 3.75
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 51000,
+      "rate": 4.5
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 5000,
+      "rate": 3.75
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 5000,
+      "rate": 3.75
+    },
+    {
       "date": "2026-03-08",
       "currency": "SGD",
       "duration": "6 Month",
@@ -19854,6 +19938,20 @@
       "duration": "6 Month",
       "volume": 20500,
       "rate": 4.75
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 7000,
+      "rate": 4.75
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "SGD",
+      "duration": "6 Month",
+      "volume": 254000,
+      "rate": 4.5
     },
     {
       "date": "2026-03-08",
@@ -26338,6 +26436,13 @@
       "rate": 6.75
     },
     {
+      "date": "2026-09-08",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 54000,
+      "rate": 7
+    },
+    {
       "date": "2026-03-08",
       "currency": "USD",
       "duration": "6 Month",
@@ -29528,6 +29633,13 @@
       "duration": "12 Month",
       "volume": 42000,
       "rate": 7.5
+    },
+    {
+      "date": "2026-09-08",
+      "currency": "USD",
+      "duration": "12 Month",
+      "volume": 15000,
+      "rate": 5
     },
     {
       "date": "2026-03-12",
@@ -32731,17 +32843,17 @@
       "week": "2026-09-07",
       "currency": "SGD",
       "duration": "1 Month",
-      "avgRate": 4.579545454545454,
-      "volume": 3778500,
-      "count": 44
+      "avgRate": 4.522321428571429,
+      "volume": 4359500,
+      "count": 56
     },
     {
       "week": "2026-09-07",
       "currency": "SGD",
       "duration": "6 Month",
       "avgRate": 4.625,
-      "volume": 70500,
-      "count": 2
+      "volume": 331500,
+      "count": 4
     },
     {
       "week": "2026-09-07",
@@ -32755,9 +32867,9 @@
       "week": "2026-09-07",
       "currency": "USD",
       "duration": "1 Month",
-      "avgRate": 6.75,
-      "volume": 594500,
-      "count": 18
+      "avgRate": 6.7631578947368425,
+      "volume": 648500,
+      "count": 19
     },
     {
       "week": "2026-09-07",
@@ -32771,9 +32883,9 @@
       "week": "2026-09-07",
       "currency": "USD",
       "duration": "12 Month",
-      "avgRate": 7.5,
-      "volume": 42000,
-      "count": 1
+      "avgRate": 6.25,
+      "volume": 57000,
+      "count": 2
     }
   ]
 }
