@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T12:50:36.629Z",
+  "updatedAt": "2026-09-18T18:57:38.081Z",
   "fromDate": "2026-03-18",
   "toDate": "2026-09-18",
   "transactions": [
@@ -1065,6 +1065,13 @@
       "currency": "EUR",
       "duration": "12 Month",
       "volume": 7000,
+      "rate": 5.75
+    },
+    {
+      "date": "2026-09-18",
+      "currency": "EUR",
+      "duration": "12 Month",
+      "volume": 21500,
       "rate": 5.75
     },
     {
@@ -15723,6 +15730,27 @@
       "currency": "SGD",
       "duration": "1 Month",
       "volume": 77500,
+      "rate": 4.75
+    },
+    {
+      "date": "2026-09-18",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 8500,
+      "rate": 4.25
+    },
+    {
+      "date": "2026-09-18",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 16000,
+      "rate": 4.25
+    },
+    {
+      "date": "2026-09-18",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 16000,
       "rate": 4.75
     },
     {
@@ -30508,6 +30536,13 @@
       "duration": "24 Month",
       "volume": 16000,
       "rate": 7.5
+    },
+    {
+      "date": "2026-09-18",
+      "currency": "USD",
+      "duration": "24 Month",
+      "volume": 26500,
+      "rate": 8
     }
   ],
   "weekly": [
@@ -32844,8 +32879,8 @@
       "currency": "EUR",
       "duration": "12 Month",
       "avgRate": 5.75,
-      "volume": 7000,
-      "count": 1
+      "volume": 28500,
+      "count": 2
     },
     {
       "week": "2026-09-14",
@@ -32859,9 +32894,9 @@
       "week": "2026-09-14",
       "currency": "SGD",
       "duration": "1 Month",
-      "avgRate": 4.466867469879518,
-      "volume": 5776000,
-      "count": 83
+      "avgRate": 4.465116279069767,
+      "volume": 5816500,
+      "count": 86
     },
     {
       "week": "2026-09-14",
@@ -32915,9 +32950,9 @@
       "week": "2026-09-14",
       "currency": "USD",
       "duration": "24 Month",
-      "avgRate": 7.5,
-      "volume": 226000,
-      "count": 7
+      "avgRate": 7.5625,
+      "volume": 252500,
+      "count": 8
     }
   ]
 }
