@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T04:45:26.970Z",
+  "updatedAt": "2026-09-27T13:45:01.428Z",
   "fromDate": "2026-03-27",
   "toDate": "2026-09-27",
   "transactions": [
@@ -15656,6 +15656,13 @@
       "rate": 4.25
     },
     {
+      "date": "2026-09-27",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 74000,
+      "rate": 5
+    },
+    {
       "date": "2026-03-27",
       "currency": "SGD",
       "duration": "6 Month",
@@ -27857,6 +27864,20 @@
       "rate": 5.5
     },
     {
+      "date": "2026-09-27",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 5500,
+      "rate": 6.25
+    },
+    {
+      "date": "2026-09-27",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 108500,
+      "rate": 6.5
+    },
+    {
       "date": "2026-03-28",
       "currency": "USD",
       "duration": "12 Month",
@@ -29409,6 +29430,13 @@
       "duration": "12 Month",
       "volume": 8500,
       "rate": 6.75
+    },
+    {
+      "date": "2026-09-27",
+      "currency": "USD",
+      "duration": "12 Month",
+      "volume": 16000,
+      "rate": 6.5
     },
     {
       "date": "2026-03-28",
@@ -32593,9 +32621,9 @@
       "week": "2026-09-21",
       "currency": "SGD",
       "duration": "1 Month",
-      "avgRate": 4.614457831325301,
-      "volume": 7855000,
-      "count": 83
+      "avgRate": 4.619047619047619,
+      "volume": 7929000,
+      "count": 84
     },
     {
       "week": "2026-09-21",
@@ -32633,17 +32661,17 @@
       "week": "2026-09-21",
       "currency": "USD",
       "duration": "6 Month",
-      "avgRate": 6.783333333333333,
-      "volume": 556000,
-      "count": 15
+      "avgRate": 6.735294117647059,
+      "volume": 670000,
+      "count": 17
     },
     {
       "week": "2026-09-21",
       "currency": "USD",
       "duration": "12 Month",
-      "avgRate": 7.681818181818182,
-      "volume": 452500,
-      "count": 11
+      "avgRate": 7.583333333333333,
+      "volume": 468500,
+      "count": 12
     },
     {
       "week": "2026-09-21",
