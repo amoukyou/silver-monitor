@@ -1,16 +1,15 @@
 {
-  "fetchedAt": "2026-10-01T15:17:10.642Z",
+  "fetchedAt": "2026-10-01T20:54:45.643Z",
   "USD": {
     "source": "U.S. Treasury Daily Yield Curve",
     "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
-    "date": "09/30/2026",
+    "date": "10/01/2026",
     "rates": {
-      "1 Month": 4.02,
-      "6 Month": 4.33,
-      "12 Month": 4.54,
-      "24 Month": 4.88
-    },
-    "fromCache": true
+      "1 Month": 4.06,
+      "6 Month": 4.27,
+      "12 Month": 4.44,
+      "24 Month": 4.78
+    }
   },
   "EUR": {
     "source": "ECB Deposit Facility Rate",
