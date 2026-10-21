@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T13:37:07.854Z",
+  "updatedAt": "2026-10-21T19:59:17.989Z",
   "fromDate": "2026-04-21",
   "toDate": "2026-10-21",
   "transactions": [
@@ -12961,6 +12961,20 @@
       "rate": 4.5
     },
     {
+      "date": "2026-09-19",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 5000,
+      "rate": 4.25
+    },
+    {
+      "date": "2026-09-18",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 237500,
+      "rate": 4.25
+    },
+    {
       "date": "2026-09-15",
       "currency": "SGD",
       "duration": "1 Month",
@@ -13498,20 +13512,6 @@
       "duration": "1 Month",
       "volume": 100000,
       "rate": 4.5
-    },
-    {
-      "date": "2026-09-19",
-      "currency": "SGD",
-      "duration": "1 Month",
-      "volume": 5000,
-      "rate": 4.25
-    },
-    {
-      "date": "2026-09-18",
-      "currency": "SGD",
-      "duration": "1 Month",
-      "volume": 237500,
-      "rate": 4.25
     },
     {
       "date": "2026-09-22",
@@ -22376,6 +22376,13 @@
       "rate": 4.5
     },
     {
+      "date": "2026-10-21",
+      "currency": "SGD",
+      "duration": "12 Month",
+      "volume": 63500,
+      "rate": 5.5
+    },
+    {
       "date": "2026-04-22",
       "currency": "SGD",
       "duration": "24 Month",
@@ -27038,6 +27045,62 @@
       "rate": 6.75
     },
     {
+      "date": "2026-10-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 312000,
+      "rate": 8
+    },
+    {
+      "date": "2026-10-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 100000,
+      "rate": 7
+    },
+    {
+      "date": "2026-10-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 98500,
+      "rate": 7.25
+    },
+    {
+      "date": "2026-10-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 105000,
+      "rate": 7.5
+    },
+    {
+      "date": "2026-10-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 26500,
+      "rate": 7.25
+    },
+    {
+      "date": "2026-10-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 15000,
+      "rate": 6.75
+    },
+    {
+      "date": "2026-10-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 17500,
+      "rate": 7.5
+    },
+    {
+      "date": "2026-10-21",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 17500,
+      "rate": 7.5
+    },
+    {
       "date": "2026-04-21",
       "currency": "USD",
       "duration": "6 Month",
@@ -28736,6 +28799,34 @@
       "currency": "USD",
       "duration": "6 Month",
       "volume": 28000,
+      "rate": 7.25
+    },
+    {
+      "date": "2026-10-21",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 25500,
+      "rate": 7.25
+    },
+    {
+      "date": "2026-10-21",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 23000,
+      "rate": 7.25
+    },
+    {
+      "date": "2026-10-21",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 5000,
+      "rate": 6.5
+    },
+    {
+      "date": "2026-10-21",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 5500,
       "rate": 7.25
     },
     {
@@ -33495,25 +33586,25 @@
       "week": "2026-10-19",
       "currency": "SGD",
       "duration": "12 Month",
-      "avgRate": 5.0625,
-      "volume": 118500,
-      "count": 4
+      "avgRate": 5.15,
+      "volume": 182000,
+      "count": 5
     },
     {
       "week": "2026-10-19",
       "currency": "USD",
       "duration": "1 Month",
-      "avgRate": 6.416666666666667,
-      "volume": 429000,
-      "count": 9
+      "avgRate": 6.852941176470588,
+      "volume": 1121000,
+      "count": 17
     },
     {
       "week": "2026-10-19",
       "currency": "USD",
       "duration": "6 Month",
-      "avgRate": 7.583333333333333,
-      "volume": 149000,
-      "count": 3
+      "avgRate": 7.285714285714286,
+      "volume": 208000,
+      "count": 7
     },
     {
       "week": "2026-10-19",
