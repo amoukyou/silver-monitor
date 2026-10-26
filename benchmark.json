@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-26T04:10:33.383Z",
+  "fetchedAt": "2026-10-26T15:01:18.859Z",
   "USD": {
     "source": "U.S. Treasury Daily Yield Curve",
     "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
@@ -14,7 +14,7 @@
   "EUR": {
     "source": "ECB Deposit Facility Rate",
     "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
-    "date": "10 September 2026",
+    "date": "29 October 2026",
     "note": "ECB政策利率，适用于所有期限（非商业银行定存利率）",
     "rates": {
       "1 Month": 2.5,
