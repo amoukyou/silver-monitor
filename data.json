@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T14:26:00.480Z",
+  "updatedAt": "2026-10-31T19:49:59.200Z",
   "fromDate": "2026-05-01",
   "toDate": "2026-10-31",
   "transactions": [
@@ -12884,6 +12884,27 @@
       "rate": 4.5
     },
     {
+      "date": "2026-09-25",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 8000,
+      "rate": 4.5
+    },
+    {
+      "date": "2026-09-25",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 8000,
+      "rate": 4.5
+    },
+    {
+      "date": "2026-09-30",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 15500,
+      "rate": 4.75
+    },
+    {
       "date": "2026-09-22",
       "currency": "SGD",
       "duration": "1 Month",
@@ -13869,27 +13890,6 @@
       "duration": "1 Month",
       "volume": 10000,
       "rate": 4.5
-    },
-    {
-      "date": "2026-09-25",
-      "currency": "SGD",
-      "duration": "1 Month",
-      "volume": 8000,
-      "rate": 4.5
-    },
-    {
-      "date": "2026-09-25",
-      "currency": "SGD",
-      "duration": "1 Month",
-      "volume": 8000,
-      "rate": 4.5
-    },
-    {
-      "date": "2026-09-30",
-      "currency": "SGD",
-      "duration": "1 Month",
-      "volume": 15500,
-      "rate": 4.75
     },
     {
       "date": "2026-10-01",
@@ -16577,6 +16577,27 @@
       "currency": "SGD",
       "duration": "1 Month",
       "volume": 5000,
+      "rate": 5
+    },
+    {
+      "date": "2026-10-31",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 5000,
+      "rate": 5
+    },
+    {
+      "date": "2026-10-31",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 60000,
+      "rate": 5.5
+    },
+    {
+      "date": "2026-10-31",
+      "currency": "SGD",
+      "duration": "1 Month",
+      "volume": 9000,
       "rate": 5
     },
     {
@@ -26219,6 +26240,13 @@
       "rate": 7.5
     },
     {
+      "date": "2026-09-30",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 96000,
+      "rate": 7.75
+    },
+    {
       "date": "2026-09-22",
       "currency": "USD",
       "duration": "1 Month",
@@ -26476,13 +26504,6 @@
       "duration": "1 Month",
       "volume": 133000,
       "rate": 9
-    },
-    {
-      "date": "2026-09-30",
-      "currency": "USD",
-      "duration": "1 Month",
-      "volume": 96000,
-      "rate": 7.75
     },
     {
       "date": "2026-10-01",
@@ -27162,6 +27183,41 @@
       "duration": "1 Month",
       "volume": 20000,
       "rate": 6
+    },
+    {
+      "date": "2026-10-31",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 30000,
+      "rate": 6.5
+    },
+    {
+      "date": "2026-10-31",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 9000,
+      "rate": 5.75
+    },
+    {
+      "date": "2026-10-31",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 8000,
+      "rate": 5
+    },
+    {
+      "date": "2026-10-31",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 7000,
+      "rate": 5.5
+    },
+    {
+      "date": "2026-10-31",
+      "currency": "USD",
+      "duration": "1 Month",
+      "volume": 8000,
+      "rate": 5.5
     },
     {
       "date": "2026-05-02",
@@ -28828,6 +28884,34 @@
       "duration": "6 Month",
       "volume": 73000,
       "rate": 7.75
+    },
+    {
+      "date": "2026-10-31",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 16000,
+      "rate": 7.75
+    },
+    {
+      "date": "2026-10-31",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 15500,
+      "rate": 7.5
+    },
+    {
+      "date": "2026-10-31",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 19500,
+      "rate": 8
+    },
+    {
+      "date": "2026-10-31",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 25000,
+      "rate": 8
     },
     {
       "date": "2026-05-01",
@@ -33624,9 +33708,9 @@
       "week": "2026-10-26",
       "currency": "SGD",
       "duration": "1 Month",
-      "avgRate": 4.952127659574468,
-      "volume": 4511500,
-      "count": 47
+      "avgRate": 4.965,
+      "volume": 4585500,
+      "count": 50
     },
     {
       "week": "2026-10-26",
@@ -33656,17 +33740,17 @@
       "week": "2026-10-26",
       "currency": "USD",
       "duration": "1 Month",
-      "avgRate": 6.5,
-      "volume": 1224500,
-      "count": 11
+      "avgRate": 6.234375,
+      "volume": 1286500,
+      "count": 16
     },
     {
       "week": "2026-10-26",
       "currency": "USD",
       "duration": "6 Month",
-      "avgRate": 7.5,
-      "volume": 89000,
-      "count": 2
+      "avgRate": 7.708333333333333,
+      "volume": 165000,
+      "count": 6
     },
     {
       "week": "2026-10-26",
