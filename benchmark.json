@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-11-05T19:50:01.433Z",
+  "fetchedAt": "2026-11-06T00:55:00.156Z",
   "USD": {
     "source": "U.S. Treasury Daily Yield Curve",
     "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
-    "date": "11/04/2026",
+    "date": "11/05/2026",
     "rates": {
-      "1 Month": 4.01,
-      "6 Month": 4.25,
-      "12 Month": 4.39,
-      "24 Month": 4.58
+      "1 Month": 4.03,
+      "6 Month": 4.19,
+      "12 Month": 4.28,
+      "24 Month": 4.46
     }
   },
   "EUR": {
@@ -26,7 +26,7 @@
   "SGD": {
     "source": "HSBC Singapore SGD Fixed Deposit",
     "sourceUrl": "https://www.hsbc.com.sg/accounts/products/time-deposit/",
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "note": "HSBC新加坡标准定存利率（促销利率，最低存款要求不同）",
     "rates": {
       "6 Month": 1.8,
