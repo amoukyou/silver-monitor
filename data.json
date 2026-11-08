@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T14:54:58.516Z",
+  "updatedAt": "2026-11-08T20:18:52.688Z",
   "fromDate": "2026-05-08",
   "toDate": "2026-11-08",
   "transactions": [
@@ -29026,6 +29026,20 @@
       "rate": 7.75
     },
     {
+      "date": "2026-11-08",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 9000,
+      "rate": 7.5
+    },
+    {
+      "date": "2026-11-08",
+      "currency": "USD",
+      "duration": "6 Month",
+      "volume": 75000,
+      "rate": 7.5
+    },
+    {
       "date": "2026-05-09",
       "currency": "USD",
       "duration": "12 Month",
@@ -33869,9 +33883,9 @@
       "week": "2026-11-02",
       "currency": "USD",
       "duration": "6 Month",
-      "avgRate": 6.625,
-      "volume": 40000,
-      "count": 2
+      "avgRate": 7.0625,
+      "volume": 124000,
+      "count": 4
     },
     {
       "week": "2026-11-02",
